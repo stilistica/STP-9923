@@ -1,0 +1,60 @@
+.header .container{
+  background-color: rgba(0, 9, 18, 0.6);
+}
+
+.header-container-style{
+  display: flex;
+  position: sticky;
+  column-gap: 74.3%;
+  margin-right: 0;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 1000;
+}
+
+.logoStyle{
+  width: 50px;
+  height: 40px;
+}
+
+.btn-menu{
+  background-color: transparent;
+  box-sizing: border-box;
+  background: none;
+  box-shadow: none;
+  border: none;
+  outline: none;
+
+}
+
+.burger-menu{
+  background-color: transparent;
+  stroke: rgba(226, 223, 155, 1);
+}
+
+.mobile-menu{
+  display: block;
+  position: fixed;
+  top: 76.5px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 57px);
+  background: linear-gradient(rgba(11, 14, 22, 1), rgba(3, 21, 19, 1), rgba(11, 14, 22, 1));
+  padding-left: 16px;
+  color: rgba(226, 223, 155, 1);
+  z-index: 999;
+}
+
+.list-flex{
+    display: flex;
+    padding-left: 5%;
+    row-gap: 10px;
+    flex-direction: column;
+}
+
+.nav-desktop{
+  display: none;
+}
+
