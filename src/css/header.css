@@ -15,7 +15,7 @@
 }
 
 .logoStyle{
-  width: 50px;
+  width: 40px;
   height: 40px;
 }
 
@@ -35,16 +35,27 @@
 }
 
 .mobile-menu{
-  display: block;
   position: fixed;
   top: 76.5px;
   left: 0;
   width: 100vw;
-  height: calc(100vh - 57px);
+  height: calc(100vh - 76.5px);
   background: linear-gradient(rgba(11, 14, 22, 1), rgba(3, 21, 19, 1), rgba(11, 14, 22, 1));
   padding-left: 16px;
   color: rgba(226, 223, 155, 1);
   z-index: 999;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    transform 0.4s cubic-bezier(0.77,0,0.175,1),
+    opacity 0.3s;
+}
+
+.mobile-menu.active{
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .list-flex{

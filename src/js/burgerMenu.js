@@ -1,11 +1,15 @@
-// const openBtnEl = document.querySelector('[data-action="open"]');
-// const closeBtnEl = document.querySelector('[data-action="close"]');
-// const burgerMenuEl = document.querySelector('[data-visible]');
+const burgerBtn = document.querySelector('[data-action="toggle-menu"]');
+const mobileMenu = document.querySelector('.mobile-menu');
+const useEl = burgerBtn.querySelector('use');
 
-// openBtnEl.addEventListener('click', e => {
-//   burgerMenuEl.dataset.visible = 'open';
-// });
+const iconBurger = '../img/sprite.svg#icon-burger';
+const iconClose = '../img/sprite.svg#icon-close';
 
-// closeBtnEl.addEventListener('click', e => {
-//   burgerMenuEl.dataset.visible = 'close';
-// });
+
+burgerBtn.addEventListener('click', e => {
+  const isBurger = useEl.getAttribute('href') === iconBurger;
+  useEl.setAttribute('href', isBurger ? iconClose : iconBurger);
+
+  mobileMenu.classList.toggle('active');
+});
+
