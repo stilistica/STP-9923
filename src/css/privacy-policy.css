@@ -58,4 +58,27 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .policy-content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .pokicy-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 0.625;
+
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  .policy-date {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  .policy-text {
+    gap: 24px;
+
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
