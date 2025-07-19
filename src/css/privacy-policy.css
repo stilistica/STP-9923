@@ -1,0 +1,36 @@
+.policy-content {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.pokicy-title {
+  color: var(--color-light-yellow);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.36;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.policy-date {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.36;
+  margin-bottom: 28px;
+}
+.policy-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.policy-text .big-indent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.policy-list {
+  /* margin-left: 20px; */
+  padding-left: 24px;
+  list-style: disc;
+}
+
+@media only screen and (min-width: 1200px) {
+}
