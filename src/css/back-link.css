@@ -1,1 +1,30 @@
+.back-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.36;
 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.back-link-icon {
+  stroke: var(--color-light-yellow);
+
+  transition: color 0.3s;
+}
+.back-link:hover .back-link-icon {
+  stroke: #b4af4d;
+}
+.back-link:active .back-link-icon {
+  stroke: var(--color-yellow);
+}
+
+@media only screen and (min-width: 1200px) {
+  .back-link {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 0.625;
+    gap: 16px;
+  }
+}

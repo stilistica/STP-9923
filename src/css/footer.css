@@ -3,7 +3,7 @@
   font-family: 'Lora', sans-serif;
   font-size: 16px;
   text-align: center;
-  margin-bottom: 19px;
+  padding: 24px 0 19px 0;
 }
 .footer-contact {
   display: flex;
@@ -23,6 +23,8 @@
   transition: color 0.3s;
 }
 .footer-icon {
+  width: 20px;
+  height: 17px;
   stroke: var(--color-light-yellow);
   transition: stroke 0.3s;
 }
@@ -100,13 +102,17 @@
 
 @media only screen and (min-width: 1200px) {
   .footer {
-    margin: 54px 0 50px 0;
+    padding: 54px 0 50px 0;
     font-size: 18px;
     text-align: left;
   }
   .footer-contact {
     align-items: flex-start;
     gap: 35px;
+  }
+  .footer-icon {
+    width: 24px;
+    height: 24px;
   }
   .footer .address {
     text-align: left;
