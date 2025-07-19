@@ -23,6 +23,7 @@ mobileMenu.querySelectorAll('a[href^="#"]').forEach(link =>{
       targetEl.scrollIntoView({ behavior: "smooth" });
     }
     mobileMenu.classList.remove('active');
+    document.body.classList.remove('no-scroll');
     useEl.setAttribute('href', iconBurger);
     burgerBtn.dataset.icon = 'burger';
   });

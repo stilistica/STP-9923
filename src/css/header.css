@@ -1,11 +1,17 @@
-.header .container{
+.header {
+  position: sticky;
+  top: 0px;
+  scroll-margin-top: 57px;
   background-color: rgba(0, 9, 18, 0.6);
+  z-index: 1000;
+}
+
+.header .container{
+  padding-left: 0px;
 }
 
 .header-container-style{
   display: flex;
-  position: sticky;
-  scroll-margin-top: 57px;
   column-gap: 74.3%;
   margin-right: 0;
   justify-content: center;
