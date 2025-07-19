@@ -13,9 +13,6 @@
 
 /* Html file style */
 @import url('./policies.css');
-@import url('./terms-and-conditions.css');
-@import url('./cookies-policy.css');
-
 
 /* Sections style */
 @import url('./header.css');
