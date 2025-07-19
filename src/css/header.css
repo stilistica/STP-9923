@@ -5,6 +5,7 @@
 .header-container-style{
   display: flex;
   position: sticky;
+  scroll-margin-top: 57px;
   column-gap: 74.3%;
   margin-right: 0;
   justify-content: center;
@@ -58,7 +59,7 @@
   pointer-events: auto;
 }
 
-.list-flex{
+.mobile-list-flex{
     display: flex;
     padding-left: 5%;
     row-gap: 10px;
