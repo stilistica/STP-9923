@@ -33,6 +33,12 @@ body {
   margin: 0;
 }
 
+body.no-scroll {
+  overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+}
+
 section {
   margin: 0 auto 60px auto;
 }
