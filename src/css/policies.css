@@ -1,0 +1,84 @@
+.policy-content {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.pokicy-title {
+  color: var(--color-light-yellow);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.36;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.policy-date {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.36;
+  margin-bottom: 28px;
+}
+.policy-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  line-height: 1.36;
+}
+.policy-text .big-indent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.policy-list {
+  /* margin-left: 20px; */
+  padding-left: 24px;
+  list-style: disc;
+}
+.policy-list a {
+  text-decoration: underline;
+
+  transition: color 0.3s;
+}
+.policy-list a:hover {
+  color: var(--color-light-yellow);
+}
+.policy-list a:active {
+  color: var(--color-yellow);
+}
+
+.policy-email {
+  text-decoration: underline;
+
+  transition: color 0.3s;
+}
+.policy-email:hover {
+  color: var(--color-light-yellow);
+}
+.policy-email:active {
+  color: var(--color-yellow);
+}
+
+@media only screen and (min-width: 1200px) {
+  .policy-content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .pokicy-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 0.625;
+
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  .policy-date {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  .policy-text {
+    gap: 24px;
+
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
