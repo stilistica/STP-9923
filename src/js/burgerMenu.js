@@ -2,8 +2,8 @@ const burgerBtn = document.querySelector('[data-action="toggle-menu"]');
 const mobileMenu = document.querySelector('.mobile-menu');
 const useEl = burgerBtn.querySelector('use');
 
-const iconBurger = '../img/sprite.svg#icon-burger';
-const iconClose = '../img/sprite.svg#icon-close';
+const iconBurger = '/img/sprite.svg#icon-burger';
+const iconClose = '/img/sprite.svg#icon-close';
 
 
 burgerBtn.addEventListener('click', e => {
@@ -11,6 +11,7 @@ burgerBtn.addEventListener('click', e => {
   useEl.setAttribute('href', isBurger ? iconClose : iconBurger);
 
   mobileMenu.classList.toggle('active');
+  document.body.classList.toggle('no-scroll', mobileMenu.classList.contains('active'));
 });
 
 mobileMenu.querySelectorAll('a[href^="#"]').forEach(link =>{

@@ -32,7 +32,11 @@
 
 .burger-menu{
   background-color: transparent;
-  stroke: rgba(226, 223, 155, 1);
+  stroke: var(--color-light-yellow);
+}
+
+.burger-menu :active{
+  stroke: var(--color-yellow)
 }
 
 .mobile-menu{
