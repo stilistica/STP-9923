@@ -16,11 +16,11 @@ burgerBtn.addEventListener('click', e => {
 mobileMenu.querySelectorAll('a[href^="#"]').forEach(link =>{
   link.addEventListener('click', e=>{
     e.preventDefault();
-    // const targetId = e.currentTarget.getAttribute('href').slice(1);
-    // const targetEl = document.getElementById(targetId);
-    // if (targetEl) {
-    //   targetEl.scrollIntoView({ behavior: "smooth" });
-    // }
+    const targetId = e.currentTarget.getAttribute('href').slice(1);
+    const targetEl = document.getElementById(targetId);
+    if (targetEl) {
+      targetEl.scrollIntoView({ behavior: "smooth" });
+    }
     mobileMenu.classList.remove('active');
     useEl.setAttribute('href', iconBurger);
     burgerBtn.dataset.icon = 'burger';
