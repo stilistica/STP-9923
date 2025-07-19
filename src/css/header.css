@@ -44,6 +44,9 @@
   background: linear-gradient(rgba(11, 14, 22, 1), rgba(3, 21, 19, 1), rgba(11, 14, 22, 1));
   padding-left: 16px;
   color: rgba(226, 223, 155, 1);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
   z-index: 999;
   transform: translateX(100%);
   opacity: 0;
@@ -70,3 +73,31 @@
   display: none;
 }
 
+@media only screen and (min-width: 1200px) {
+  .header-container-style{
+    column-gap: 39px;
+    align-items: stretch;
+  }
+
+  .logoStyle{
+  width: 70px;
+  height: 70px;
+  }
+  .btn-menu{
+    display: none;
+  }
+
+  .nav-desktop{
+    display: block;
+  }
+
+  .desktop-list-flex{
+    display: flex;
+    color: rgba(226, 223, 155, 1);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    column-gap: 20px;
+  }
+}
