@@ -23,6 +23,10 @@
   background: var(--gradient-main);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Lora', serif;
 
