@@ -3,7 +3,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  width: 304px;
 }
 .down-image-title {
   background-image: image-set(
@@ -32,6 +31,8 @@
 .down-subtitle hr {
   width: 100%;
   margin-top: 18px;
+  margin-right: -16px;
+
   border: var(--color-yellow) solid 0.5px;
 
   box-shadow: 0 0 5px var(--color-yellow), 0 0 15px var(--color-yellow);
@@ -113,9 +114,6 @@
   margin-bottom: 16px;
 }
 @media only screen and (min-width: 1200px) {
-  .down-subtitle {
-    width: 1200px;
-  }
   .down-image-title {
     background-image: image-set(
       url('/img/sections/section.png') 1x,
@@ -123,6 +121,9 @@
     );
     min-width: 294px;
     min-height: 52px;
+  }
+  .down-subtitle hr {
+    margin-right: -24px;
   }
   .down-image-title p {
     font-size: 32px;
