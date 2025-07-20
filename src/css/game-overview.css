@@ -1,0 +1,51 @@
+.label-style{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 304px;
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.label{
+  background: url(../img/sections/section-2x-mob.png) left/cover no-repeat;
+  min-width: 186px;
+  min-height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: -13px;
+  margin-left: -13px;
+}
+
+.label-style hr{
+  margin-top: 18px;
+  width: 145px;
+
+  border: 0.5px solid var(--color-yellow);
+
+  box-shadow:
+    0 0 5px var(--color-yellow),
+    0 0 15px var(--color-yellow);
+}
+
+.label-paragraph{
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.game-description{
+  background: url(../img/gameOverview/game-overview-image-2x.png) center/cover no-repeat;
+  position: relative;
+  width: 288px;
+  height: 440px;
+}
+
+.label-image{
+  width: 186px;
+  height: 52px;
+}
