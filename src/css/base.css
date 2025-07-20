@@ -42,9 +42,11 @@ body.no-scroll {
 section {
   margin: 0 auto 60px auto;
 }
-
+.scroll-margin-top {
+  scroll-margin-top: 57px;
+}
 h1 {
-  font-family: 'Lora', serif;;
+  font-family: 'Lora', serif;
   font-size: 32px;
   font-weight: 500;
 }
@@ -55,10 +57,12 @@ h2 {
   font-weight: 500;
 }
 
-
 @media only screen and (min-width: 1200px) {
   section {
     margin: 0 auto 100px auto;
+  }
+  .scroll-margin-top {
+    scroll-margin-top: 100px;
   }
   h1 {
     font-family: 'Cormorant Garamond', serif;
