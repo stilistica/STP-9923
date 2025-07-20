@@ -1,10 +1,11 @@
+import spriteUrl from '/img/sprite.svg';
+
 const burgerBtn = document.querySelector('[data-action="toggle-menu"]');
 const mobileMenu = document.querySelector('.mobile-menu');
 const useEl = burgerBtn.querySelector('use');
 
-const iconBurger = '/img/sprite.svg#icon-burger';
-const iconClose = '/img/sprite.svg#icon-close';
-
+const iconBurger = `${spriteUrl}#icon-burger`;
+const iconClose = `${spriteUrl}#icon-close`;
 
 burgerBtn.addEventListener('click', e => {
   const isBurger = useEl.getAttribute('href') === iconBurger;
@@ -28,6 +29,3 @@ mobileMenu.querySelectorAll('a[href^="#"]').forEach(link =>{
     burgerBtn.dataset.icon = 'burger';
   });
 });
-
-
-
