@@ -18,7 +18,7 @@
 }
 
 .label{
-  background: url(../img/sections/section-2x-mob.png) left/cover no-repeat;
+  background: url(/img/sections/section-2x-mob.png) left/cover no-repeat;
   min-width: 186px;
   min-height: 52px;
 
@@ -48,7 +48,7 @@
 }
 
 .game-description{
-  background: url(../img/gameOverview/game-overview-image-mob-2x.png) center/cover no-repeat;
+  background: url(/img/gameOverview/game-overview-image-mob-2x.png) center/cover no-repeat;
   position: relative;
   width: 288px;
   height: auto;
@@ -87,7 +87,7 @@
 
 @media only screen and (min-width: 1200px) {
   .label{
-    background: url(../img/sections/section-2x.png) left/cover no-repeat;
+    background: url(/img/sections/section-2x.png) left/cover no-repeat;
     min-width: 295px;
     min-height: 52px;
 
@@ -96,7 +96,7 @@
   }
 
   .game-description{
-    background: url(../img/gameOverview/game-overview-image-2x.png) center/cover no-repeat;
+    background: url(/img/gameOverview/game-overview-image-2x.png) center/cover no-repeat;
     width: 1197px;
     height: auto;
   }
