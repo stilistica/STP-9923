@@ -48,6 +48,7 @@
   text-align: center;
 
   color: var(--color-yellow);
+  text-shadow: 0 0 5px var(--color-yellow), 0 0 15px var(--color-yellow);
 }
 
 .down-banner {
@@ -69,7 +70,30 @@
   min-height: 236px;
 
   margin-bottom: 16px;
+
+  animation: downMove 7s linear infinite alternate;
 }
+
+  @keyframes downMove {
+    0% {
+      transform: translateX(2%) translateY(0%);
+    }
+    20% {
+      transform: translateX(-2%) translateY(-2%);
+    }
+    40% {
+      transform: translateX(0%) translateY(2%);
+    }
+    60% {
+      transform: translateX(2%) translateY(0%);
+    }
+    80% {
+      transform: translateX(-2%) translateY(2%);
+    }
+    100% {
+      transform: translateX(0%) translateY(-2%);
+    }
+  }
 
 .down-banner p {
   font-family: Lora;
