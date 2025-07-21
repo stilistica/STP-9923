@@ -9,14 +9,16 @@
 }
 .back-link-icon {
   stroke: var(--color-light-yellow);
+  fill: none;
 
-  transition: color 0.3s;
+  transition: stroke 0.3s, fill 0.3s;
 }
 .back-link:hover .back-link-icon {
-  stroke: #b4af4d;
+  stroke: var(--color-yellow);
 }
 .back-link:active .back-link-icon {
-  stroke: var(--color-yellow);
+    stroke: var(--color-black);
+  fill: var(--color-yellow);
 }
 
 @media only screen and (min-width: 1200px) {
