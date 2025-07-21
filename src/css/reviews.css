@@ -13,7 +13,7 @@
 .reviews-svg {
   stroke: var(--color-light-yellow);
   fill: none;
-  transition: stroke 0.3s;
+  transition: stroke 0.3s, fill 0.3s;
 }
 .reviews-svg:hover {
   stroke: var(--color-yellow);
