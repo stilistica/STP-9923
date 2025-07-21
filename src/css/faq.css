@@ -23,6 +23,8 @@
 }
 
 .label-paragraph {
+  font-weight: 400;
+  font-size: 20px;
   line-height: 150%;
   text-align: center;
   color: var(--color-black);
@@ -114,10 +116,42 @@
     width: 1500px;
   }
   .label-paragraph {
-    font-size: 26px;
+    font-weight: 500;
+    font-size: 32px;
     line-height: 62%;
-    text-align: center;
   }
 
+  .topik-qestion{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+  }
+
+  .questions{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .icon-accordion-close {
+    width: 18.67px;
+    height: 18.67px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .list-qestion-item{
+    padding-top: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .list-qestion-item.open{
+    padding-top: 33px;
+  }
+
+  .list-qestions{
+    row-gap: 16px;
+  }
 
 }
