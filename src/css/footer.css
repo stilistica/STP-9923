@@ -74,6 +74,7 @@
   border: var(--color-yellow) solid 1px;
   margin-right: -16px;
   margin-left: -16px;
+  box-shadow: 0 0 3px var(--color-yellow), 0 0 10px var(--color-yellow);
 }
 
 /* policies */
@@ -127,7 +128,6 @@
   }
   .footer hr {
     margin: 28px -24px 28px -24px;
-
   }
   .footer-bottom {
     display: flex;

@@ -1,0 +1,143 @@
+.features-content {
+  position: relative;
+  overflow: hidden;
+  margin: 0 -16px;
+}
+.fog {
+  position: absolute;
+
+  width: 398px;
+  height: 217px;
+  background-image: image-set(
+    url('/img/gameplayFeatures/fog-mob.png') 1x,
+    url('/img/gameplayFeatures/fog-2x-mob.png') 2x
+  );
+  background-repeat: no-repeat;
+
+  z-index: 0;
+  pointer-events: none;
+}
+.fog-one {
+  top: 8%;
+  left: 0;
+  animation: fogMoveOne 5s linear infinite alternate;
+}
+.fog-two {
+  top: 58%;
+  right: 0;
+  animation: fogMoveTwo 5s linear infinite alternate;
+}
+@keyframes fogMoveOne {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
+@keyframes fogMoveTwo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30%);
+  }
+}
+
+.features-cards {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  margin-top: 24px;
+}
+.features-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.features-card {
+  background-image: image-set(
+    url('/img/gameplayFeatures/card.png') 1x,
+    url('/img/gameplayFeatures/card-2x.png') 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+  gap: 12px;
+
+  width: 285px;
+  height: 240px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--color-black);
+}
+
+.features-card h4 {
+  padding-top: 64px;
+  font-family: Cormorant Garamond;
+  font-weight: 500;
+  font-size: 22px;
+  vertical-align: middle;
+}
+.features-card p {
+  padding: 0 6px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .features-content {
+    margin: 0 -24px;
+  }
+  .fog {
+    width: 891px;
+    height: 361px;
+    background-image: image-set(
+      url('/img/gameplayFeatures/fog.png') 1x,
+      url('/img/gameplayFeatures/fog-2x.png') 2x
+    );
+  }
+  .fog-one {
+    top: 3%;
+    right: 0;
+    animation: fogMoveOne 7s linear infinite alternate;
+  }
+  .fog-two {
+    left: 20;
+    animation: fogMoveTwo 7s linear infinite alternate;
+  }
+  @keyframes fogMoveOne {
+    0% {
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+  @keyframes fogMoveTwo {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .features-cards {
+    gap: 28px;
+    margin-top: 64px;
+  }
+  .features-card-group {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
