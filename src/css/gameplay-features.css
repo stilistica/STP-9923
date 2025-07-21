@@ -1,0 +1,69 @@
+.features-content {
+  position: relative;
+  /* overflow: hidden; */
+}
+.fog {
+  position: absolute;
+
+  width: 398px;
+  height: 217px;
+  background-image: image-set(
+    url('/img/gameplayFeatures/fog-mob.png') 1x,
+    url('/img/gameplayFeatures/fog-2x-mob.png') 2x
+  );
+  background-repeat: no-repeat;
+
+  z-index: 0;
+  pointer-events: none;
+}
+.fog-one {
+  top: 25%;
+  left: 0;
+  animation: fogMoveOne 5s linear infinite alternate;
+}
+.fog-two {
+  top: 75%;
+  right: 0;
+  animation: fogMoveTwo 5s linear infinite alternate;
+}
+@keyframes fogMoveOne {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
+@keyframes fogMoveTwo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30%);
+  }
+}
+
+.features-cards {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+.features-card {
+    background-image: image-set(
+    url('/img/gameplayFeatures/card.png') 1x,
+    url('/img/gameplayFeatures/card-2x.png') 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  min-width: 285px;
+  min-height: 240px;
+}
