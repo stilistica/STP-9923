@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     accordionButtons.forEach((button) => {
         const topicButton = button.closest(".topic-button");
+        const topicTitle = topicButton?.querySelector('.topik-qestion');
+        const listQuestionItem = topicButton?.closest('.list-qestion-item');
         const question = topicButton?.nextElementSibling;
         const icon = button.querySelector("use");
 
@@ -22,12 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         button.addEventListener("click", () => {
             question.classList.toggle("open");
-            const isOpen = question.classList.contains("open");
-            if (isOpen) {
-                icon.setAttribute("href", iconClose);
-            } else {
-                icon.setAttribute("href", iconPlus);
+
+            if (topicTitle) {
+                topicTitle.classList.toggle("open");
             }
+            if (listQuestionItem) {
+                listQuestionItem.classList.toggle("open");
+            }
+
+            const isOpen = question.classList.contains("open");
+            icon.setAttribute("href", isOpen ? iconClose : iconPlus);
         });
     });
 });
