@@ -1,11 +1,11 @@
 import spriteUrl from '/img/sprite.svg';
+const iconBurger = `${spriteUrl}#icon-burger`;
+const iconClose = `${spriteUrl}#icon-close`;
 
 const burgerBtn = document.querySelector('[data-action="toggle-menu"]');
 const mobileMenu = document.querySelector('.mobile-menu');
 const useEl = burgerBtn.querySelector('use');
 
-const iconBurger = `${spriteUrl}#icon-burger`;
-const iconClose = `${spriteUrl}#icon-close`;
 
 burgerBtn.addEventListener('click', e => {
   const isBurger = useEl.getAttribute('href') === iconBurger;

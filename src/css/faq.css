@@ -1,0 +1,157 @@
+.label {
+  background: url(/img/sections/section-2x-mob.png) left/cover no-repeat;
+  min-width: 186px;
+  min-height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: -13px;
+  margin-left: -13px;
+}
+
+.label-style hr {
+  margin-top: 18px;
+  margin-right: -16px;
+
+  width: 145px;
+
+  border: 0.5px solid var(--color-yellow);
+
+  box-shadow: 0 0 5px var(--color-yellow), 0 0 15px var(--color-yellow);
+}
+
+.label-paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.list-qestions{
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 8px;
+
+}
+
+.list-qestion-item{
+  border: 1px solid var(--color-yellow);
+  border-radius: 12px;
+  padding: 25px 8px 25px 16px;
+  transition: padding-top 0.8s ease;
+}
+
+.list-qestion-item.open{
+  padding-top: 16px;
+}
+
+.topic-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 11px;
+}
+
+.topik-qestion{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 136%;
+  min-width: 221px;
+}
+
+.topik-qestion.open{
+  color: var(--color-yellow);
+}
+
+.button-accordion{
+  background: transparent;
+  cursor: pointer;
+  border: none;
+
+  stroke: var(--color-light-yellow);
+}
+
+
+.topic-button{
+  display: flex;
+}
+
+.questions{
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.8s ease, opacity 0.7s ease, padding 0.7s ease;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 136%;
+  color: var(--color-light-yellow);
+}
+
+.questions.open {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-height: 150px;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+  .label-style {
+    margin-bottom: 64px;
+  }
+  .label {
+    background: url(/img/sections/section-2x.png) left/cover no-repeat;
+    min-width: 295px;
+    min-height: 52px;
+  }
+
+
+  .label-style hr {
+    /* margin-top: 60px; */
+    margin-right: -24px;
+    width: 1500px;
+  }
+  .label-paragraph {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 62%;
+  }
+
+  .topik-qestion{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+  }
+
+  .questions{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .icon-accordion-close {
+    width: 18.67px;
+    height: 18.67px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .list-qestion-item{
+    padding-top: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .list-qestion-item.open{
+    padding-top: 33px;
+  }
+
+  .list-qestions{
+    row-gap: 16px;
+  }
+
+}
