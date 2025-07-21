@@ -43,9 +43,17 @@ body.no-scroll {
   overscroll-behavior: none;
 }
 
-section {
-  margin: 0 auto 60px auto;
+section:not(.hero) {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(.37,1.26,.77,1.22), transform 0.8s cubic-bezier(.37,1.26,.77,1.22);
+  will-change: opacity, transform;
 }
+section.visible:not(.hero) {
+  opacity: 1;
+  transform: none;
+}
+
 .scroll-margin-top {
   scroll-margin-top: 57px;
 }
@@ -61,11 +69,6 @@ h2 {
   font-weight: 500;
 }
 
-svg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 @media only screen and (min-width: 1200px) {
   section {

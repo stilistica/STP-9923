@@ -6,6 +6,13 @@
   z-index: 1000;
 }
 
+.header svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .header .container {
   padding-left: 0px;
   padding-right: 0px;
