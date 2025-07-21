@@ -1,6 +1,7 @@
 .features-content {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
+  margin: 0 -16px;
 }
 .fog {
   position: absolute;
@@ -47,11 +48,17 @@
   position: relative;
   z-index: 1;
 
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 16px;
-  grid-template-columns: 1fr;
 
   margin-top: 24px;
+}
+.features-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .features-card {
   background-image: image-set(
@@ -68,8 +75,8 @@
   text-align: center;
   gap: 12px;
 
-  min-width: 285px;
-  min-height: 240px;
+  width: 285px;
+  height: 240px;
 
   font-weight: 400;
   font-size: 18px;
@@ -86,4 +93,51 @@
 }
 .features-card p {
   padding: 0 6px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .features-content {
+    margin: 0 -24px;
+  }
+  .fog {
+    width: 891px;
+    height: 361px;
+    background-image: image-set(
+      url('/img/gameplayFeatures/fog.png') 1x,
+      url('/img/gameplayFeatures/fog-2x.png') 2x
+    );
+  }
+  .fog-one {
+    top: 3%;
+    right: 0;
+    animation: fogMoveOne 7s linear infinite alternate;
+  }
+  .fog-two {
+    left: 20;
+    animation: fogMoveTwo 7s linear infinite alternate;
+  }
+  @keyframes fogMoveOne {
+    0% {
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+  @keyframes fogMoveTwo {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .features-cards {
+    gap: 28px;
+    margin-top: 64px;
+  }
+  .features-card-group {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
