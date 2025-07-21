@@ -29,18 +29,38 @@
 }
 @keyframes fogMoveOne {
   0% {
-    transform: translateX(0);
+    transform: translateX(-10%) translateY(0%);
+    opacity: 1;
+  }
+  33% {
+    transform: translateX(-2%) translateY(-3%);
+    opacity: 0.6;
+  }
+  66% {
+    transform: translateX(6%) translateY(3%);
+    opacity: 1;
   }
   100% {
-    transform: translateX(-40%);
+    transform: translateX(14%) translateY(0%);
+    opacity: 0.4;
   }
 }
 @keyframes fogMoveTwo {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+  33% {
+    transform: translateX(-10%) translateY(-2%);
+    opacity: 0.6;
+  }
+  66% {
+    transform: translateX(-20%) translateY(2%);
+    opacity: 1;
   }
   100% {
-    transform: translateX(30%);
+    transform: translateX(-30%) translateY(0%);
+    opacity: 0.4;
   }
 }
 
@@ -118,18 +138,54 @@
   }
   @keyframes fogMoveOne {
     0% {
-      transform: translateX(-10%);
+      transform: translateX(-10%) translateY(0%);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0%) translateY(-3%);
+      opacity: 0.6;
+    }
+    40% {
+      transform: translateX(10%) translateY(3%);
+      opacity: 0.8;
+    }
+    60% {
+      transform: translateX(20%) translateY(-3%);
+      opacity: 1;
+    }
+    80% {
+      transform: translateX(30%) translateY(3%);
+      opacity: 0.4;
     }
     100% {
-      transform: translateX(50%);
+      transform: translateX(40%) translateY(0%);
+      opacity: 0.8;
     }
   }
   @keyframes fogMoveTwo {
     0% {
-      transform: translateX(0);
+      transform: translateX(10%) translateY(0%);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0%) translateY(-2%);
+      opacity: 0.6;
+    }
+    40% {
+      transform: translateX(-10%) translateY(2%);
+      opacity: 1;
+    }
+    60% {
+      transform: translateX(-20%) translateY(-2%);
+      opacity: 0.4;
+    }
+    80% {
+      transform: translateX(-30%) translateY(2%);
+      opacity: 1;
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-40%) translateY(0%);
+      opacity: 0.5;
     }
   }
   .features-cards {
