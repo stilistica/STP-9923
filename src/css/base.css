@@ -43,6 +43,10 @@ body.no-scroll {
   overscroll-behavior: none;
 }
 
+section{
+  margin: 0 auto 60px auto;
+}
+
 section:not(.hero) {
   opacity: 0;
   transform: translateY(40px);
