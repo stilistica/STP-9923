@@ -17,12 +17,12 @@
   pointer-events: none;
 }
 .fog-one {
-  top: 25%;
+  top: 8%;
   left: 0;
   animation: fogMoveOne 5s linear infinite alternate;
 }
 .fog-two {
-  top: 75%;
+  top: 58%;
   right: 0;
   animation: fogMoveTwo 5s linear infinite alternate;
 }
@@ -50,9 +50,11 @@
   display: grid;
   gap: 16px;
   grid-template-columns: 1fr;
+
+  margin-top: 24px;
 }
 .features-card {
-    background-image: image-set(
+  background-image: image-set(
     url('/img/gameplayFeatures/card.png') 1x,
     url('/img/gameplayFeatures/card-2x.png') 2x
   );
@@ -60,10 +62,28 @@
   background-position: center;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
+  gap: 12px;
 
   min-width: 285px;
   min-height: 240px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--color-black);
+}
+
+.features-card h4 {
+  padding-top: 64px;
+  font-family: Cormorant Garamond;
+  font-weight: 500;
+  font-size: 22px;
+  vertical-align: middle;
+}
+.features-card p {
+  padding: 0 6px;
 }
