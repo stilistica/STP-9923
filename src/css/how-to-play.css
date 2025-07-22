@@ -31,8 +31,6 @@
 }
 
 .list-item-second-photo{
-  display: flex;
-  align-items: center;
   width: 290px;
   height: 122px;
   padding: 11px 8px;
