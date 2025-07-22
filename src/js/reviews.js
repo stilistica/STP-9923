@@ -6,7 +6,7 @@ const btnPrev = document.querySelector('.reviews-swiper-prev');
 const btnNext = document.querySelector('.reviews-swiper-next');
 
 document.addEventListener('DOMContentLoaded', () => {
-  const swiper = new Swiper('.reviews-can-see', {
+  const swiperOne = new Swiper('.reviews-can-see', {
     direction: 'horizontal',
     loop: false,
     spaceBetween: 24,
@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function updateButtonSlider() {
-    btnPrev.classList.toggle('rev-disabled', swiper.isBeginning);
-    btnNext.classList.toggle('rev-disabled', swiper.isEnd);
+    btnPrev.classList.toggle('rev-disabled', swiperOne.isBeginning);
+    btnNext.classList.toggle('rev-disabled', swiperOne.isEnd);
   }
-  swiper.on('slideChange', updateButtonSlider);
+  swiperOne.on('slideChange', updateButtonSlider);
     updateButtonSlider();
 });
