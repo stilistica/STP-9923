@@ -3,6 +3,7 @@
 }
 
 .hero-container{
+  border-top: 1.5px solid var(--color-yellow);
   background: url(/img/hero/hero-image-mob-2x.png)center/cover no-repeat;
   position: relative;
   width: 320px;
