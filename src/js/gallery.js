@@ -2,7 +2,9 @@ import Swiper from 'swiper';
 import { EffectCards, EffectCoverflow, Navigation } from 'swiper/modules';
 import 'swiper/css/bundle';
 
-document.addEventListener('DOMContentLoaded', () => {
+let swiperTwo = null;
+
+function createGallerySwiper() {
   const isDesktop = window.innerWidth >= 1200;
 
   const swiperTwo = new Swiper('.gallery-swiper', {
@@ -43,4 +45,22 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.gallery-swiper-prev',
     },
   });
+}
+
+let currentMode = window.innerWidth >= 1200 ? 'desktop' : 'mobile';
+
+window.addEventListener('resize', () => {
+  const newMode = window.innerWidth >= 1200 ? 'desktop' : 'mobile';
+
+  if (newMode !== currentMode) {
+    currentMode = newMode;
+    if (swiperTwo) swiperTwo.destroy(true, true);
+    createGallerySwiper();
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.gallery-swiper')) {
+    createGallerySwiper();
+  }
 });
