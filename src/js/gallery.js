@@ -7,7 +7,7 @@ let swiperTwo = null;
 function createGallerySwiper() {
   const isDesktop = window.innerWidth >= 1200;
 
-  const swiperTwo = new Swiper('.gallery-swiper', {
+  swiperTwo = new Swiper('.gallery-swiper', {
     modules: [EffectCoverflow, Navigation, EffectCards],
     effect: isDesktop ? 'coverflow' : 'coverflow',
     grabCursor: true,
