@@ -34,10 +34,22 @@
 @media only screen and (min-width: 1200px) {
   .gallery-swiper {
   width: 1000px;
+  height: 501px;
   padding-top: 24px !important;
 }
 .gallery-swiper .swiper-slide-active:hover img {
   transform: translateY(-15px);
   box-shadow:  0 0 8px var(--color-yellow), 0 0 15px var(--color-yellow);;
 }
+.gallery-swiper .swiper-slide:not(.swiper-slide-active) {
+  padding-top: 45px;
+}
+.gallery-swiper .swiper-slide-prev {
+  padding-top: 0px !important;
+}
+
+.gallery-swiper .swiper-slide-next {
+  padding-top: 0px !important;
+}
+
 }
