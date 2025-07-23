@@ -4,7 +4,7 @@
 
 .hero-container{
   border-top: 1.5px solid var(--color-yellow);
-  background: url(/img/hero/hero-image-mob-2x.webp)center/cover no-repeat;
+  background: url(/img/hero/hero-image-mob-2x.png)center/cover no-repeat;
   position: relative;
   width: 320px;
   height: 349px;
@@ -71,7 +71,7 @@
 
 @media only screen and (min-width: 1200px) {
   .hero-container{
-    background: url(/img/hero/hero-image-desktop-2x.webp)center/cover no-repeat;
+    background: url(/img/hero/hero-image-desktop-2x.png)center/cover no-repeat;
     position: relative;
     width: 1197px;
     height: 599px;
