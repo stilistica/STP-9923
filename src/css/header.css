@@ -115,6 +115,7 @@
 
   .nav-desktop {
     display: block;
+    padding-top: 15px;
   }
 
   .desktop-list-flex {
