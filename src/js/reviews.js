@@ -2,17 +2,17 @@ import Swiper from 'swiper';
 import { Pagination, Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 
-const btnPrev = document.querySelector('.reviews-swiper-prev');
-const btnNext = document.querySelector('.reviews-swiper-next');
+const btnPrev = document.querySelector('[data-reviews-prev]');
+const btnNext = document.querySelector('[data-reviews-next]');
 
 document.addEventListener('DOMContentLoaded', () => {
-  const swiperOne = new Swiper('.reviews-can-see', {
+  const swiperOne = new Swiper('[data-reviews-swiper]', {
     direction: 'horizontal',
     loop: false,
     spaceBetween: 24,
     navigation: {
-      nextEl: '.reviews-swiper-next',
-      prevEl: '.reviews-swiper-prev',
+      nextEl: '[data-reviews-next]',
+      prevEl: '[data-reviews-prev]',
     },
     keyboard: {
       enabled: true,
@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function updateButtonSlider() {
-    btnPrev.classList.toggle('rev-disabled', swiperOne.isBeginning);
-    btnNext.classList.toggle('rev-disabled', swiperOne.isEnd);
+    btnPrev.dataset.disabled = swiperOne.isBeginning;
+    btnNext.dataset.disabled = swiperOne.isEnd;
   }
   swiperOne.on('slideChange', updateButtonSlider);
-    updateButtonSlider();
+  updateButtonSlider();
 });

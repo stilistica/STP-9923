@@ -23,7 +23,7 @@
   stroke: var(--color-black);
   fill: var(--color-yellow);
 }
-.reviews-svg.rev-disabled {
+[data-disabled="true"] {
   stroke: #7a7a7a;
   pointer-events: none;
   cursor: default;
