@@ -39,6 +39,11 @@
   box-shadow: 0 0 5px 0 var(--color-yellow);
   border-radius: 5px;;
 }
+.list-item:hover,
+.list-item-photo:hover,
+.list-item-second-photo:hover{
+  box-shadow: 0 0 10px 0 var(--color-yellow);
+}
 
 .image-list {
   width: 100%;
