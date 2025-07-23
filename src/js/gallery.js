@@ -7,7 +7,7 @@ let swiperTwo = null;
 function createGallerySwiper() {
   const isDesktop = window.innerWidth >= 1200;
 
-  swiperTwo = new Swiper('.gallery-swiper', {
+  swiperTwo = new Swiper('[data-gallery-swiper]', {
     modules: [EffectCoverflow, Navigation, EffectCards],
     effect: isDesktop ? 'coverflow' : 'coverflow',
     grabCursor: true,
@@ -41,8 +41,8 @@ function createGallerySwiper() {
         }),
 
     navigation: {
-      nextEl: '.gallery-swiper-next',
-      prevEl: '.gallery-swiper-prev',
+      nextEl: '[data-gallery-next]',
+      prevEl: '[data-gallery-prev]',
     },
   });
 }
@@ -60,7 +60,7 @@ window.addEventListener('resize', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (document.querySelector('.gallery-swiper')) {
+  if (document.querySelector('[data-gallery-swiper]')) {
     createGallerySwiper();
   }
 });
