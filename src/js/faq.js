@@ -22,17 +22,17 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!question) return;
 
         button.addEventListener("click", () => {
-            question.classList.toggle("open");
+            const isOpen = question.getAttribute('data-open') === 'true';
+            question.setAttribute('data-open', String(!isOpen));
 
             if (topicTitle) {
-                topicTitle.classList.toggle("open");
+                topicTitle.setAttribute('data-open', String(!isOpen));
             }
             if (listQuestionItem) {
-                listQuestionItem.classList.toggle("open");
+                listQuestionItem.setAttribute('data-open', String(!isOpen));
             }
 
-            const isOpen = question.classList.contains("open");
-            icon.setAttribute("href", isOpen ? iconClose : iconPlus);
+            icon.setAttribute("href", !isOpen ? iconClose : iconPlus);
         });
     });
 });

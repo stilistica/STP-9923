@@ -47,15 +47,18 @@ section{
   margin: 0 auto 60px auto;
 }
 
-section:not(.hero) {
+[data-action="section-nothero"] {
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s cubic-bezier(.37,1.26,.77,1.22), transform 0.8s cubic-bezier(.37,1.26,.77,1.22);
-  will-change: opacity, transform;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
 }
-section.visible:not(.hero) {
+
+[data-action="section-nothero"][data-visible="true"] {
   opacity: 1;
   transform: none;
+}
+body[data-scroll-locked="true"] {
+  overflow: hidden;
 }
 
 .scroll-margin-top {
