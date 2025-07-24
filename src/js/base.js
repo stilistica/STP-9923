@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll('section:not(.hero)');
+const sections = document.querySelectorAll('[data-action="section-nothero"]');
 const observer = new IntersectionObserver((entries, obs) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
