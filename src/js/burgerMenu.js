@@ -3,8 +3,8 @@ const iconBurger = `${spriteUrl}#icon-burger`;
 const iconClose = `${spriteUrl}#icon-close`;
 
 const burgerBtn = document.querySelector('[data-action="toggle-menu"]');
-const mobileMenu = document.querySelector('.mobile-menu');
-const useEl = burgerBtn.querySelector('use');
+const mobileMenu = document.querySelector('[data-action="mobile-menu"]');
+const useEl = document.querySelector('[data-action="use-burger"]');
 
 
 burgerBtn.addEventListener('click', e => {
