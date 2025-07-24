@@ -51,7 +51,7 @@
   transition: padding-top 0.8s ease;
 }
 
-.list-qestion-item.open{
+.list-qestion-item[data-open="true"]{
   padding-top: 16px;
 }
 
@@ -69,7 +69,7 @@
   min-width: 221px;
 }
 
-.topik-qestion.open{
+.topik-qestion[data-open="true"]{
   color: var(--color-yellow);
 }
 
@@ -98,7 +98,7 @@
   color: var(--color-light-yellow);
 }
 
-.questions.open {
+.questions[data-open="true"] {
   padding-top: 10px;
   padding-bottom: 10px;
   max-height: 150px;
@@ -152,7 +152,7 @@
     padding-right: 24px;
   }
 
-  .list-qestion-item.open{
+  .list-qestion-item[data-open="true"]{
     padding-top: 33px;
   }
 
