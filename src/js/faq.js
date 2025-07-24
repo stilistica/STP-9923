@@ -6,17 +6,16 @@ const iconPlus = `${spriteUrl}#icon-plus`;
 const iconClose = `${spriteUrl}#icon-close`;
 
 document.addEventListener("DOMContentLoaded", () => {
-    new Accordion(".list-qestions", {
+    new Accordion("[data-accordion-list]", {
         duration: 500,
         showMultiple: true,
     });
-
-    const accordionButtons = document.querySelectorAll(".button-accordion");
+    const accordionButtons = document.querySelectorAll("[data-accordion-btn]");
 
     accordionButtons.forEach((button) => {
-        const topicButton = button.closest(".topic-button");
-        const topicTitle = topicButton?.querySelector('.topik-qestion');
-        const listQuestionItem = topicButton?.closest('.list-qestion-item');
+        const topicButton = button.closest("[data-topic-button]");
+        const topicTitle = topicButton?.querySelector('[data-topic-title]');
+        const listQuestionItem = topicButton?.closest('[data-accordion-item]');
         const question = topicButton?.nextElementSibling;
         const icon = button.querySelector("use");
 
